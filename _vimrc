@@ -241,7 +241,7 @@ let g:tagbar_compact=1              " tagbar 子窗口中不显示冗余帮助�
 "===============================================================================
 
 "{{{ source
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
+if filereadable(expand("~/.vim/conf/_vimrc.local"))
+  source ~/.vim/conf/_vimrc.local
 endif
 "}}}
