@@ -138,6 +138,7 @@ set viminfo+=!                      " 保存全局变量
 set report=0                        " 通过使用: commands命令，告诉我们文件的哪一行被改变过
 set noerrorbells                    " 错误时不发出声响
 set novisualbell                    " 禁用可视响铃
+set confirm                         " 在处理未保存或只读文件的时候，弹出确认
 set t_vb=                           " 可视响铃
 if has("gui_running") && has("unix")" 终端鼠标支持
     set mouse=a                     " "a" for GUI, MS-DOS and Win32
