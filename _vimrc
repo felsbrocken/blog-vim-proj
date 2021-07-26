@@ -110,6 +110,7 @@ set cursorline                      " 高亮当前行
 set showcmd                         " 再屏幕最后一行显示命令
 set laststatus=2                    " 始终显示状态栏
 set cmdheight=1                     " 命令行使用的屏幕行数
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容
 "}}}
 
 "{{{ 搜索和匹配
