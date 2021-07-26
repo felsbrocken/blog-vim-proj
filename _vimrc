@@ -85,6 +85,7 @@ set smarttab                        " 在行和段开始处使用制表符
 
 " 行号
 set number                          " 显示行号
+set magic                           " 设置魔术
 
 " 代码折叠
 set nofoldenable                    " 关闭Vim不启动时打开代码折叠功能
