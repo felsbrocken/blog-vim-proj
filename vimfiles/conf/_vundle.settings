@@ -1,0 +1,4 @@
+source ~/.vim/conf/rainbow.rc
+source ~/.vim/conf/startify_bookmarks.rc
+source ~/.vim/conf/misc.rc
+source ~/.vim/conf/ultisnips.vim

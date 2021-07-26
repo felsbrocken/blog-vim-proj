@@ -1,0 +1,27 @@
+"{{{
+let g:startify_bookmarks            = [
+            \ '~/Code/blog/startify/1.txt',
+            \ '~/Code/blog/startify/2.txt',
+            \]
+
+let g:startify_files_number = 2
+let g:startify_skiplist = [
+       \ '\.vimgolf',
+       \ '^/tmp',
+       \ '/project/.*/documentation',
+       \ ]
+
+let g:startify_custom_header = [
+            \ '+------------------------------+',
+            \ '|  Welcome to my blog.         |',
+            \ '|                              |',
+            \ '|  http://hackers-delight.com/ |',
+            \ '+----------------+-------------+',
+            \]
+
+let g:startify_custom_footer = [
+            \ '+------------------------------+',
+            \ '|  1.01 ^ 365 =  37.78         |',
+            \ '+----------------+-------------+',
+            \]
+"}}}

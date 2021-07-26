@@ -8,10 +8,6 @@
 " Vim Settings
 "===============================================================================
 
-"{{{ start pathogen
-execute pathogen#infect()
-"}}}
-
 "{{{ 基本设置
 set nocompatible                    " 不兼容老得VI，除非有特殊的理由
 "}}}
@@ -252,5 +248,21 @@ let g:tagbar_compact=1              " tagbar 子窗口中不显示冗余帮助�
 "{{{ source
 if filereadable(expand("~/.vim/conf/_vimrc.local"))
   source ~/.vim/conf/_vimrc.local
+endif
+"}}}
+
+"===============================================================================
+" Source vundle files
+"===============================================================================
+
+"{{{ source
+if filereadable(expand("~/.vim/conf/_vimrc.vundle"))
+  source ~/.vim/conf/_vimrc.vundle
+endif
+"}}}
+
+"{{{ source
+if filereadable(expand("~/.vim/conf/_vundle_settings"))
+  source ~/.vim/conf/_vundle_settings
 endif
 "}}}
