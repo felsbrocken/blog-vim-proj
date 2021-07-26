@@ -145,6 +145,8 @@ if has("gui_running") && has("unix")" 终端鼠标支持
 else
     set mouse=v
 endif
+set mousemodel=popup
+
 set clipboard+=unnamed              " 共享剪贴板
 "set selection=exclusive            " use default value(inclusive)
 set selectmode=mouse,key
