@@ -37,6 +37,8 @@ else
 	set fileencoding=utf-8
 endif
 set encoding=utf-8                  " vim内部编码
+set langmenu=zh_CN.UTF-8
+set termencoding=utf-8
 set nobomb                          " 不使用bom编码
 set nobackup                        " 不使用备份文件
 set noswapfile                      " 不产生交换文件
