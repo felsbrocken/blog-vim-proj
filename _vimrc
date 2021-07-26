@@ -78,6 +78,9 @@ autocmd FileType yml setlocal ai ts=2 sw=2 et
 set softtabstop=4                   " 配合tabstop
 set listchars=tab:▸\ ,trail:▫       " 指定Tab和结尾空白字符
 set backspace=eol,start,indent      " 插入模式下使用 <BS>、<Del> <C-W> <C-U>
+" 使回格键（backspace）正常处理indent, eol, start等。允许backspace和光标键跨越行边界
+"set backspace=2
+
 set smarttab                        " 在行和段开始处使用制表符
 
 " 行号
