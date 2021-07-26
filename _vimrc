@@ -125,6 +125,7 @@ set incsearch                       " 增量搜索
 set t_Co=256                        " 开启256色支持
 "set background=dark
 colorscheme desertEx_256
+"colorscheme ron                    " 设置背景主题，冷色调
 "colorscheme solarized
 "colorscheme molokai
 "colorscheme phd
