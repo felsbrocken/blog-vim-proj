@@ -55,7 +55,8 @@ set cindent                         " C程序自动缩进
 " 换行
 set wrap                            " (当一行长度超过屏幕宽度后)自动换行显示
 set linebreak                       " 不在单词中间断行
-set fo+=mB                          " 打开断行模块对亚洲语言支持
+set formatoptions+=mB               " 打开断行模块对亚洲语言支持
+
 set whichwrap+=<,>,h,l              " 命令模式下可以直接移动到下一行或上一行
 "set iskeyword+=.,_,$,@,%,#,-
 set iskeyword+=$,%                  " 带有如下符号的单词不要被换行分割
