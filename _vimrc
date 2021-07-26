@@ -225,8 +225,8 @@ let g:Powerline_colorscheme='solarized256' " 设置状态栏主题风格
 "}}}
 
 "{{{ UltiSnips.vim
-autocmd FileType * call UltiSnips#FileTypeChanged()
-let g:UltiSnipsExpandTrigger="ii"	" 连续按下两次i触发代码补全
+"autocmd FileType * call UltiSnips#FileTypeChanged()
+let g:UltiSnipsExpandTrigger="ii"   " 连续按下两次i触发代码补全
 "}}}
 
 "{{{ tagbar
