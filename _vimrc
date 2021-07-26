@@ -60,7 +60,13 @@ set formatoptions+=mB               " 打开断行模块对亚洲语言支持
 set whichwrap+=<,>,h,l              " 命令模式下可以直接移动到下一行或上一行
 "set iskeyword+=.,_,$,@,%,#,-
 set iskeyword+=$,%                  " 带有如下符号的单词不要被换行分割
-set textwidth=0                     " 关闭代码自动折行，插入模式下，默认每80个字开启新行。
+"{{{标尺相关
+set cursorcolumn                    " 高亮显示列
+set textwidth=0                    " 插入模式下文本的代码自动折行，每80个字开启新行。设置为0则关闭代码自动折行
+set scrolloff=15                    " 光标上下两侧最少保留的屏幕行数
+set colorcolumn=+1                           " 是否显示标尺
+hi ColorColumn ctermfg=White ctermbg=Grey   " 标尺颜色
+"}}}
 
 " 空白
 set shiftwidth=4                    " 缩进空白数
