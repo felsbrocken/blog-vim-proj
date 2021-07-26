@@ -89,6 +89,11 @@ set magic                           " 设置魔术
 
 " 代码折叠
 set nofoldenable                    " 关闭Vim不启动时打开代码折叠功能
+"set foldenable      " 允许折叠  
+""set foldlevel=3 
+""set foldcolumn=0
+""set foldmethod=manual   " 手动折叠  
+""set foldmethod=indent 
 set foldmethod=syntax               " 根据语法折叠代码
 
 " Vim折叠
