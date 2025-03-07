@@ -1,48 +1,62 @@
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
+call plug#begin('~/.vim/bundle')
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+" vlang support
+Plug 'ollykel/v-vim'
+Plug 'cheap-glitch/vim-v'
+Plug 'zakuro9715/vim-vtools'
+Plug 'VundleVim/Vundle.vim'
+
+"git interface
+Plug 'tpope/vim-fugitive'
+
+"filesystem
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
+Plug 'kien/ctrlp.vim'
+
+"html
+"  isnowfy only compatible with python not python3
+Plug 'isnowfy/python-vim-instant-markdown'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'suan/vim-instant-markdown'
+Plug 'nelstrom/vim-markdown-preview'
+"python sytax checker
+Plug 'nvie/vim-flake8'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'scrooloose/syntastic'
+
+"auto-completion stuff
+"Plug 'klen/python-mode'
+Plug 'Valloric/YouCompleteMe'
+Plug 'klen/rope-vim'
+"Plug 'davidhalter/jedi-vim'
+Plug 'ervandew/supertab'
+""code folding
+Plug 'tmhedberg/SimpylFold'
+
+"Colors!!!
+Plug 'altercation/vim-colors-solarized'
+Plug 'jnurmine/Zenburn'
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'Yggdroot/indentLine'
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'Yggdroot/indentLine'
 let g:indentLine_char = '┊'
-"ndle 'tpope/vim-rails.git'
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-" non github repos
-Bundle 'https://github.com/wincent/command-t.git'
-Bundle 'Auto-Pairs'
-Bundle 'python-imports.vim'
-Bundle 'CaptureClipboard'
-Bundle 'ctrlp-modified.vim'
-Bundle 'last_edit_marker.vim'
-Bundle 'synmark.vim'
-"Bundle 'Python-mode-klen'
-Bundle 'SQLComplete.vim'
-Bundle 'Javascript-OmniCompletion-with-YUI-and-j'
-"Bundle 'JavaScript-Indent'
-"Bundle 'Better-Javascript-Indentation'
-Bundle 'jslint.vim'
-Bundle "pangloss/vim-javascript"
-Bundle 'Vim-Script-Updater'
-Bundle 'ctrlp.vim'
-Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'jsbeautify'
-Bundle 'The-NERD-Commenter'
-"django
-Bundle 'django_templates.vim'
-Bundle 'Django-Projects'
-Plugin 'SirVer/ultisnips'  "这个是没有现成的代码片段的，自己怎么配置还没研究，但是可以用别人的，看下一行
-Plugin 'honza/vim-snippets' "这个就应有就有了，都在 .vim/vundle/vim-snippets/snippets/下面
+Plug 'https://github.com/wincent/command-t.git'
+"这个是没有现成的代码片段的，自己怎么配置还没研究，但是可以用别人的，看下一行
+Plug 'SirVer/ultisnips'
+"这个就应有就有了，都在 .vim/vundle/vim-snippets/snippets/下面
+Plug 'honza/vim-snippets'
 
-"Bundle 'FredKSchott/CoVim'
-"Bundle 'djangojump'
-" ...
+"Plug 'FredKSchott/CoVim'
 
+Plug 'myusuf3/numbers.vim'
+Plug 'preservim/tagbar'
+Plug 'vim-scripts/SrcExpl'
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
